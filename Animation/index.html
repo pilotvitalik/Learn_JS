@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Это тестовая страница</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/reset.css" rel="stylesheet" type="text/css" media="(min-width:100px) and (max-width:200px)" />
+	<script src="Index.js" defer></script>
+	<style>
+		#myContainer{
+			width: 400px;
+			height: 400px;
+			position: relative;
+			background: yellow;
+		}
+		#myAnimation{
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			background: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+		</div>
+		<div class="common">
+			<div class="content">
+				<button id="button">Animation</button>
+				<div id="myContainer">
+					<div id="myAnimation">
+					</div>
+				</div>
+			</div>
+			<div class="sidebar">
+			</div>
+			<div class="etc">
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+	</div>
+	<!--
+	1. Об анимации почитать более подробно (JS анимация). Тут представлена только часть
+	2.Создаем кнопку и добавляем ей название
+	3.Создаем 2 блока:
+		- один большой с id="myContainer"
+		- второй маленький с id="myAnimation", который будет      перемещатсья внутри большого блока
+	4.Добавляем стили для CSS
+	10.Кнопке добавляем атрибут подписки на ф-ию onclick="myMove()"
+	11. При подписке через JS, доб. кнопке id="button"
+	-->
+</body>
+</html>
