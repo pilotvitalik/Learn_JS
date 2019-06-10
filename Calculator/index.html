@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Это тестовая страница</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/reset.css" rel="stylesheet" type="text/css" media="(min-width:100px) and (max-width:200px)" />
+	<script src="Index.js" defer></script>
+	<style>
+		#myInput{
+			width: 1300px;
+			font-size: 16px;
+			padding: 12px 20px 12px 5px;
+			border: solid 1px #ddd;
+			margin-bottom: 12px;
+		}
+		#myUL{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		#myUL li a{
+			border: solid 1px #ddd;
+			margin-top: -1px;
+			background-color: #f6f6f6;
+			padding: 12px;
+			text-decoration: none;
+			font-size: 18px;
+			color: black;
+			display: block;
+		}
+		#myUL li a.header{
+			background-color: #e2e2e2;
+			cursor: default;
+		}
+		#myUL li a:hover:not(.header){
+			background-color: #eee;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+		</div>
+		<div class="common">
+			<div class="content">
+				<p>Число 1: <input type="text" id="n1"></p>
+				<p>Число 2: <input type="text" id="n2"></p>
+
+				<button id="plus">+</button>
+				<button onclick="minus()">-</button>
+				<button onclick="multiply()">*</button>
+				<button onclick="share()">/</button>
+
+
+				<hr>
+				<p id="out">Ответ: </p>
+			</div>	
+			<div class="sidebar">
+			</div>
+			<div class="etc">
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+	</div>
+	<!--
+		1. Создаем параграфы, которые предназначены для ввода информации. Внутри параграфа доб. тег input  с типом для ввода текста и id
+		2. Создаем кнопки для математических действий. При необходимости добавляем подпсику на события в кнопки
+		3. Для красоты добавляем гор. черту на всю страницу
+		4. ПОд чертой добавляем параграф, в котором будет выводиться результат
+	-->
+</body>
+</html>
