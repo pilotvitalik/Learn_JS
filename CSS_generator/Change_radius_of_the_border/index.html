@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Это тестовая страница</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/reset.css" rel="stylesheet" type="text/css" media="(min-width:100px) and (max-width:200px)" />
+	<script src="Index.js" defer></script>
+	<style>
+		#block{
+			height: 100px;
+			width: 200px;
+			background: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+		</div>
+		<div class="common">
+			<div class="content">
+				<div class="block1">
+					<p>Верхний левый угол
+						<input type="range" id="rtl" min="0" max="100" value="0">
+						<input type="text" id="ttl" value="0">
+					</p>
+				</div>
+				<div class="block1">
+					<p>Верхний правый угол
+						<input type="range" id="rtr" min="0" max="100" value="0">
+						<input type="text" id="ttr" value="0">
+					</p>
+				</div>
+				<div class="block1">
+					<p>Нижний правый угол
+						<input type="range" id="rbr" min="0" max="100" value="0">
+						<input type="text" id="tbr" value="0">
+					</p>
+				</div>
+				<div class="block1">
+					<p>Нижний левый угол
+						<input type="range" id="rbl" min="0" max="100" value="0">
+						<input type="text" id="tbl" value="0">
+					</p>
+				</div>
+				<div id="block"></div>
+			</div>
+			<div class="sidebar">
+			</div>
+			<div class="etc">
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+	</div>
+	<!--
+	1. Пример сервиса CSS3 Generator (http://css3generator.com/)
+	2. Создаем блок с классом.
+	3. Создаем параграф и помещаем внутрь 2 input. При необходимости в параграфе пишем текст
+	4. Одному input добавить атрибуты type="range", min, max и нач.значение по умолчанию (value), id или класс.
+	5. Другому атрибуты type="text", value и id или класс
+	6. Повторить п. 2-5 еще 3 раза меняя текст в параграфах, id
+	7. Создать блок, границы которого будем менять. Задать ему св-ва в CSS(ширина, высота, задний фон)
+	11. Добавить к каждому атрибуту подписку на событие oninput="fun1()"
+	-->
+</body>
+</html>
