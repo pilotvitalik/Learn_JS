@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Возникновение события при изменении checkbox</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/reset.css" rel="stylesheet" type="text/css" media="(min-width:100px) and (max-width:200px)" />
+	<script src="Index.js" defer></script>
+	<style>
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+		</div>
+		<div class="common">
+			<div class="content">
+			  <input type = 'checkbox' id = 'cb1' onchange = 'showOrHide("cb1", "cat1");'/>Показать содержимое категории 1
+			  <br />
+			  <div id = 'cat1' style = 'display: none;'>Содержимое категории 1</div>
+			  <input type = 'checkbox' id = 'cb2' onchange = 'showOrHide("cb2", "cat2");' />Показать содержимое категории 2
+			  <br />
+			  <div id = 'cat2' style = 'display: none;'>Содержимое категории 2</div>
+			  <input type = 'checkbox' id = 'cb3' onchange = 'showOrHide("cb3", "cat3");' />Показать содержимое категории 3
+			  <br />
+			  <div id = 'cat3' style = 'display: none;'>Содержимое категории 3</div>
+			</div>
+			<div class="sidebar">
+			</div>
+			<div class="etc">
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+	</div>
+	<!--
+	-->
+</body>
+</html>
