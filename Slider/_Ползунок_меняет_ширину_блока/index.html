@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Это тестовая страница</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/reset.css" rel="stylesheet" type="text/css" media="(min-width:100px) and (max-width:200px)" />
+	<script src="Index.js" defer></script>
+	<style>
+		#test{
+			height: 20px;
+			width: 20px;
+			background: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+		</div>
+		<div class="common">
+			<div class="content">
+				<input type="range" min="0" max="100" step="1" id="r1">
+				<div id="test">
+				</div>
+			</div>
+			<div class="sidebar">
+			</div>
+			<div class="etc">
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+	</div>
+	<!--
+	1. Чтобы создать ползунок, исп. тег input с атрибутом type и значением его range.
+	2. для корректного отображения ползунка, необходимо добавить следующие атрибуты: min, max, step
+	3. Создаем блок с тегом div и id. В CSS блоку задать ширину, высоту, задний фон и т.п. 
+	7. ДЛя подписки на событие исп. атрибут oninput="fun1()", добавленный в тег input
+	-->
+</body>
+</html>
